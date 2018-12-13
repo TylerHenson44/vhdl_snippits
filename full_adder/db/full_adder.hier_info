@@ -1,0 +1,11 @@
+|full_adder
+i_a => o_sum.IN0
+i_a => o_cout.IN0
+i_b => o_sum.IN1
+i_b => o_cout.IN1
+i_cin => o_sum.IN1
+i_cin => o_cout.IN1
+o_sum <= o_sum.DB_MAX_OUTPUT_PORT_TYPE
+o_cout <= o_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

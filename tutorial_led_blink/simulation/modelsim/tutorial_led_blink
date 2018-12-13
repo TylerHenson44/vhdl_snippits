@@ -1,0 +1,19 @@
+add wave i_clock
+add wave i_enable
+add wave i_switch_1
+add wave i_switch_2
+
+force -freeze i_clock 0 0, 1 10 -r 20
+force i_enable 1
+force i_switch_1 0
+force i_switch_2 0
+run 1000000000
+force i_switch_1 0
+force i_switch_2 1
+run 1000000000
+force i_switch_1 1
+force i_switch_2 0
+run 1000000000
+force i_switch_1 1
+force i_switch_2 1
+run 1000000000
